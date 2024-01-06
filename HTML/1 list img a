@@ -1,1 +1,44 @@
 
+<!-- P, ol, ul, img, a -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Testing</title>
+</head>
+<body>
+   <h>Hello</h>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusantium!</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum velit inventore ratione quam, id eos dolores aut dolorem dolorum tempora.</p>
+
+
+   <ol type="A" start="26">
+      <li>subject</li>
+      <li>class</li>
+      <li>table</li>
+   </ol>
+
+   <ul>
+      <li>front-end </li>
+      <ol>
+         <li>Html</li>
+         <li>css</li>
+         <li>javascript</li>
+         <li>React.js</li>
+      </ol>
+      <li>back-end</li>
+      <ol>
+         <li>Node.js</li>
+         <li>Express.js</li>
+         <li>MongoDB</li>
+      </ol>
+   </ul>
+
+   <img src="https://images.unsplash.com/photo-1682686580433-2af05ee670ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" alt="unsplash image" title="image">
+
+   <a href="https://www.google.com" target="_blank">google</a>
+
+</body>
+</html>
