@@ -1,0 +1,106 @@
+<!-- Form tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forms</title>
+</head>
+<body>
+   
+   <h2>Form Tag</h2>
+
+   <form action="backend.js">
+      <div>
+         Name: <input type="text" name="myName" placeholder="Enter Full Name" minlength="3" maxlength="30">
+      </div>
+      <br>
+
+      <div>
+         <textarea name="myText" placeholder="Write about yourself!" cols="30" rows="4"></textarea>
+      </div>
+      <br>
+
+      <div>
+         City:
+         <input type="text" name="city" list="city" placeholder="Enter your city">
+         <datalist id="city">
+            <option value="Noida">Noida</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+         </datalist>
+      </div>
+      <br>
+
+      <div>
+         Age: <input type="number" name="myAge" min="18" max="60">
+      </div>
+      <br>
+
+      <div>
+         Email: <input type="email" name="myEmail" required>
+      </div>
+      <br>
+
+      <div>
+         Password: <input type="password" name="myPassword" id="password">
+
+         <button id="pbtn" type="button" onclick="change()">Show</button>
+      </div>
+      <br>
+
+      <div>
+         DOB: <input type="date" name="" id="">
+      </div>
+      <br>
+
+      <div>
+         <label for="18">Are you 18+? </label>
+         <input type="checkbox" name="" id="18">
+      </div>
+      <br>
+
+      <div>
+         <!-- radio tag always works when 'name' is same -->
+         Gender: Male <input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id="">
+      </div>
+      <br>
+
+      <div>
+         <label for="nation">Nationality: </label>
+         <select name="myNation" id="nation">
+            <option value="ind">India</option>
+            <option value="usa">USA</option>
+            <option value="russia">russia</option>
+         </select>
+      </div>
+      <br>
+
+      <div>
+         <input type="submit" value="Submit Now">
+      </div>
+      
+   </form>
+
+   <script>
+      var password = document.getElementById("password")
+      var pbtn = document.getElementById("pbtn")
+
+      function change(){
+         if(password.type=="password"){
+            password.type="text"
+            pbtn.innerHTML = "Hide"
+         }else{
+            password.type="password"
+            pbtn.innerHTML = "Show"
+         }
+      }
+   </script>
+
+</body>
+
+
+</html>
