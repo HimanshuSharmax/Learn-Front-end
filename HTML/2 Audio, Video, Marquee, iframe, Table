@@ -1,0 +1,62 @@
+<!-- Audio, Video, Marquee, iframe, Table -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+
+   <h3>Audio file<h3>
+   <audio controls>
+      <source src="./Jamal Jamaloo.mp3" type="audio/mp3">
+   </audio>
+
+   <h3>Video file</h3>
+   <video controls autoplay width="300">
+      <source src="./Himanshu Sharma's Video Resume.mp4" type="video/mp4">
+   </video>
+
+   <h3>Marquee</h3>
+   <marquee behavior="" direction="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, laboriosam!</marquee>
+
+   <h3>iframe</h3>
+   <iframe src="./Himanshu_Sharma_Resume.pdf#toolbar=0&view=fit" frameborder="0" height="800" width="1500"></iframe>
+
+   <div style="overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Noida,+Uttar+Pradesh,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="grab-map-data">premium bootstrap themes</a><style>#google-maps-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+
+   <h3>Tables</h3>
+
+   <table border="2" cellpadding="10" cellspacing="2">
+      <caption>Emplyee Data</caption>
+
+      <thead>
+         <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Mail</th>
+            <th>Phone</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>1001</td>
+            <td>Himanshu</td>
+            <td><a href="mailto:ihimanshusharmax@gmail.com">ihimanshusharmax@gmail.com</a></td>
+            <td><a href="tel:9874563210">9874563210</a></td>
+         </tr>
+         <tr>
+            <td>1002</td>
+            <td>Rakesh</td>
+            <td><a href="mailto:ihimanshusharmax@gmail.com">Rakeshkumar@gmail.com</a></td>
+            <td><a href="tel:9874563210">7458963210</a></td>
+         </tr>
+      </tbody>
+
+   </table>
+
+</body>
+</html>
