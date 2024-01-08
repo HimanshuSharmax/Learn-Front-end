@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Page</title>
+</head>
+<body>
+   
+   <h2>Sign-up Here!</h2>
+   <h5>Please fill this form to create an account!</h5>
+   <form action="" method="post">
+      <input type="text" placeholder="First Name" min="5" maxlength="30" required>
+      <input type="text" placeholder="Last Name" min="5" maxlength="30">
+      <br>
+      <br>
+
+      <input type="email" name="" id="email" placeholder="Email" required>
+      <br>
+      <br>
+
+      <input type="password" name="" id="" required placeholder="Password">
+
+      <input type="password" name="" id="" required placeholder="Confirm Password">
+      <br>
+      <br>
+
+      <input type="checkbox" name="terms" id="terms" required>
+      <label for="terms">I accept the Terms of Use & Privacy Policy.</label>
+      <br>
+      <br>
+
+      <input type="submit" value="Sign-Up" placeholder="">
+   </form>
+
+
+   <h2>Login Here!</h2>
+   <form action="">
+      <input type="email" name="email" id="" placeholder="Email" required>
+      <br>
+      <br>
+
+      <input type="password" name="" id="" placeholder="Password" required>
+      <br>
+      <br>
+
+      <input type="checkbox" name="" id="Remember" required>
+      <label for="Remember">Remember me</label>
+      <br>
+      <br>
+
+      <input type="submit" value="Login">
+      <br>
+      <br>
+
+      <span>Forget Password?</span>
+      
+   </form>
+
+</body>
+</html>
