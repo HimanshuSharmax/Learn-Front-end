@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Text & Font</title>
+   <style>
+      *{
+         box-sizing: border-box;
+      }
+      h1{
+         text-align: center;
+         letter-spacing: 0.1rem;
+         text-transform: uppercase;
+
+         text-decoration:underline rgba(226, 43, 95, 0.607);
+         text-decoration-style: wavy;
+         text-shadow: 4px 4px 10px red,4px 4px 10px blue;
+      }
+      p{ 
+         text-align: justify;
+         text-indent: 5rem; 
+         letter-spacing: 0.1rem;
+         line-height: 1.5rem;
+      }
+   </style>
+</head>
+<body>
+   
+   <h1>Unlock the Power of Blockchain</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi velit asperiores adipisci! Odio voluptate quam accusamus cumque temporibus animi ipsum amet itaque sint hic, blanditiis porro obcaecati ducimus, aut ad! Eveniet velit fugit voluptatum facilis officia placeat minima tempora, error eaque consequuntur quaerat maxime accusamus aliquid voluptates explicabo accusantium a odio in perferendis, vel mollitia exercitationem? Delectus autem ex, assumenda praesentium voluptatum laboriosam minus atque iusto ipsum sed sunt magni odio sint omnis asperiores esse deleniti quo tempora neque! Officia quae autem possimus harum rem nemo enim quis, eius repellendus, error sapiente alias, maiores nam? Consequuntur quis accusantium numquam!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi velit asperiores adipisci! Odio voluptate quam accusamus cumque temporibus animi ipsum amet itaque sint hic, blanditiis porro obcaecati ducimus, aut ad! Eveniet velit fugit voluptatum facilis officia placeat minima tempora, error eaque consequuntur quaerat maxime accusamus aliquid voluptates explicabo accusantium a odio in perferendis, vel mollitia exercitationem? Delectus autem ex, assumenda praesentium voluptatum laboriosam minus atque iusto ipsum sed sunt magni odio sint omnis asperiores esse deleniti quo tempora neque! Officia quae autem possimus harum rem nemo enim quis, eius repellendus, error sapiente alias, maiores nam? Consequuntur quis accusantium numquam!</p>
+
+</body>
+</html>
