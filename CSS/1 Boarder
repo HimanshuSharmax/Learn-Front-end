@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      #p1{
+         border: 1px solid red;
+      }
+
+      #p2 {
+         border: 15px groove purple;
+         padding: 1.1rem;
+      }
+   </style>
+</head>
+<body>
+   <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quidem expedita laboriosam reiciendis repellendus vero error blanditiis maxime vitae. Doloribus!</p>
+   <p id="p2">Fugiat doloribus libero natus, quia, voluptate nam nesciunt aperiam omnis molestiae autem accusantium temporibus maiores voluptatem dolores iusto labore cupiditate.</p>
+   <p id="p3">Eum fugiat aspernatur ratione reprehenderit soluta voluptatum, vero incidunt a tempore optio doloremque suscipit fuga id, quisquam laudantium, quae dolores.</p>
+   <p id="p4">Vitae tempora reiciendis accusantium deserunt quasi? Maxime esse quo eum, libero incidunt sed, corporis praesentium repellat nam veritatis harum! Velit!</p>
+   <p id="p5">Qui unde necessitatibus officiis animi iusto provident magni quisquam natus veniam praesentium ratione quidem eaque, repudiandae aliquid deleniti, similique ut.</p>
+</body>
+</html>
