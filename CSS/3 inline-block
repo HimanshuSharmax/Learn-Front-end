@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         border: 1px solid red;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      ul{
+         text-align: end;
+         padding: 20px;
+         background-color: black;
+         color: rgb(255, 255, 255);
+
+      }
+      li{
+         display: inline;
+         margin: 5px;
+      }
+      li:hover{
+         color: rgb(225, 255, 0);
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+
+   <!-- block elements- p,h1,div,forms,list -->
+   <p>Lorem ipsum dolor sit.</p>
+   <p>Lorem, ipsum dolor.</p>
+   <h4>h4</h4>
+   <div>divisions</div>
+
+   <!-- inline elements- span,img,a  -->
+   <span>Lorem ipsum dolor sit.</span>
+   <span>Lorem ipsum dolor sit.</span>
+   <a href="koi_link">Link</a>
+   <img src="" alt="image">
+
+
+   <h1><span style="color: blue;">Let's</span><span style="color: brown;">Get</span><span style="color: burlywood;">Started</span></h1>
+
+   <br>
+   <br>
+   <!-- navbar -->
+   <nav>
+      <ul>
+       <li>Home</li>
+       <li>Product</li>
+       <li>About</li>
+      </ul> 
+    </nav>
+
+</body>
+</html>
