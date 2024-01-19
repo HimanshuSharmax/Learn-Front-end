@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Float & Overflow</title>
+   <style>
+      .container{
+         margin: 50px;
+         width: 300px;
+         height: 400px;
+         text-align: justify;
+         border: 2px solid blue;
+
+         overflow: auto;
+      
+      }
+
+      .img1{
+         float: left;
+         margin-right: 20px;
+      }
+      
+      .img2{
+         float: right;
+         margin-left: 20px;
+      }
+
+
+   </style>
+</head>
+<body>
+   
+   <div class="container">
+      <img class="img1" src="https://via.placeholder.com/100" alt="">
+
+      <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi sunt perferendis inventore nihil vero laboriosam et quis aliquam autem placeat similique illo commodi ipsa numquam consequuntur quaerat nam possimus officia, neque aut voluptates minus. Necessitatibus, nemo ipsum. Quia similique ullam neque dolorum iusto tempora vel et facilis sunt non dolores saepe voluptatibus quo, sed inventore porro? Perferendis, repellat iusto ut distinctio deleniti nisi vel earum nihil sapiente quidem inventore et corporis alias itaque tempora, adipisci vero eius. Consequatur numquam harum obcaecati. Aperiam, eum doloribus consequatur obcaecati magnam dignissimos ut rem blanditiis, ad iusto corrupti quo. Cum voluptatem voluptates placeat!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, dolores at deleniti modi voluptatum dignissimos reprehenderit amet, beatae, et ad error 
+      </p>
+
+      <img class="img2" src="https://via.placeholder.com/100" alt="">
+
+      <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi sunt perferendis inventore nihil vero laboriosam et quis aliquam autem placeat similique illo commodi ipsa numquam consequuntur quaerat nam possimus officia, neque aut voluptates minus. Necessitatibus, nemo ipsum. Quia similique ullam neque dolorum iusto tempora vel et facilis sunt non dolores saepe voluptatibus quo, sed inventore porro? Perferendis, repellat iusto ut distinctio deleniti nisi vel earum nihil sapiente quidem inventore et corporis alias itaque tempora, adipisci vero eius. Consequatur numquam harum obcaecati. Aperiam, eum doloribus consequatur obcaecati magnam dignissimos ut rem blanditiis, ad iusto corrupti quo. Cum voluptatem voluptates placeat!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, dolores at deleniti modi voluptatum dignissimos reprehenderit amet, beatae, et ad error 
+      </p>
+   </div>
+
+</body>
+</html>
