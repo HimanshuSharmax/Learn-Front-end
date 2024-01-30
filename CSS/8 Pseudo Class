@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      /* Pseudo Class :  */
+      #btn{
+         color: rgb(255, 0, 217);
+      }
+      
+      #btn:hover{
+         background-color: black;
+      }
+
+      #btn:visited{
+         color: rgb(207, 40, 40);
+      }
+
+      #btn:active{
+         color: black;
+         border: 2px solid green;
+         padding: 10px;
+      }
+
+      ul li:first-child{
+         background-color: rgb(42, 69, 165);
+      }
+
+      ul li:last-child{
+         background-color: rgb(54, 165, 42);
+      }
+
+      ul li:nth-child(3n){
+         background-color: palevioletred;
+      }
+
+      /* Pseudo element ::  */
+
+      ::selection{
+         background-color: black;
+         color: rgb(234, 242, 90);
+      }
+
+      p::first-letter{
+         color: red;
+         font-size: 1.5rem;
+         font-weight: bold;
+      }
+
+      p::first-line{
+         background-color: rgb(253, 209, 209);
+      }
+
+      ul::before{
+         content: 'Items / this can not be copy ';
+      }
+
+      .required::after{
+         content: '*';
+         color: red;
+      }
+
+      .important::after{
+         content: 'Important';
+         background-color: red;
+         color: aliceblue;
+         font-size: 0.6rem;
+         margin-left: 10px;
+         padding: 2px;
+      }   
+
+   </style>
+</head>
+<body>
+   
+   <div class="div">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure voluptate temporibus quo sed eum voluptatem rerum nemo obcaecati alias modi, aspernatur commodi, fuga vero beatae corrupti fugiat blanditiis vitae.</p>
+      <a id="btn" href="#">Learn more</a>
+      <ul>
+         <li>item-1</li>
+         <li>item-2</li>
+         <li>item-3</li>
+         <li class="important">item-4</li>
+         <li>item-5</li>
+         <li>item-6</li>
+         <li>item-7</li>
+         <li>item-8</li>
+         <li class="important">item-9</li>
+         <li>item-10</li>
+      </ul>
+
+      <form action="">
+         <label class="required" for="name">Name</label>
+         <input type="text">
+      </form>
+
+   </div>
+
+</body>
+</html>
