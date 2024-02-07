@@ -53,3 +53,10 @@ document.write(`
     Total Amount     = ${total.toFixed(2)}<br>
     EMI Amount       = ${emi.toFixed(2)}
 `)
+
+
+//! WAP to cal area of circle
+let radius = +prompt("Enter radius of circle");
+const pi = 3.14;
+let area = pi * radius * radius;
+document.write(`Area of circe is ${area}.`)
