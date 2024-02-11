@@ -1,0 +1,82 @@
+/*
+Operators:  some special symbols which are used
+            to perform some predefine operations
+            on operands(variables,constants etc i.e
+            a value)
+Category on Basis of Operands:
+1. Unary    :   Required only one operand
+2. Binary   :   Required two operands
+3. Ternary  :   Required three Operands
+
+Types:
+1. Arithmetic Operators
+2. Assignment Operator
+3. Composite/Compound/Short Hand Operators
+4. Relational Operator
+5. Logical Operators
+6. Bitwise Operators
+7. Conditional Operator
+8. Increment Operator
+9. Decrement Operator
+10. MISC. Operator
+ */
+
+/*
+1. Arithmetic Operators:
+    +   Addition
+    -   Subtraction
+    *   Multiplication
+    /   Division(Quotient)
+    %   Division(Remainder)
+    **  Power
+
+
+    Category: Binary
+    Precedence: L to R
+    Priority: 
+                1. Brackets
+                2. **
+                3. * / %
+                4. + -
+ */
+
+console.log(15+6)               //21
+console.log(15+"6")             //156
+console.log("15"+6)             //156
+console.log("15"+"6")           //156
+console.log("15"+"Hello World") //15Hello World
+
+
+console.log(15-6)               //9
+console.log(15-"6")             //9
+console.log("15"-6)             //9
+console.log("15"-"6")           //9
+console.log("15"-"Hello World") //NaN
+
+console.log(15*6)               //90
+console.log(15*"6")             //90
+console.log("15"*6)             //90
+console.log("15"*"6")           //90
+console.log("15"*"Hello World") //NaN
+
+console.log(15/6)               //2.5
+console.log(15/"6")             //2.5
+console.log("15"/6)             //2.5
+console.log("15"/"6")           //2.5
+console.log("15"/"Hello World") //NaN
+
+console.log(15%6)               //3
+console.log(15%"6")             //3
+console.log("15"%6)             //3
+console.log("15"%"6")           //3
+console.log("15"%"Hello World") //NaN
+
+console.log(15**6)               //11390625
+console.log(15**"6")             //11390625
+console.log("15"**6)             //11390625
+console.log("15"**"6")           //11390625
+console.log("15"**"Hello World") //NaN
+
+var  a = 10*3/5*7%50/7*10%70/10*5-14*3%20*15/10*5+5*(5*2**5)
+console.log(a)
+
