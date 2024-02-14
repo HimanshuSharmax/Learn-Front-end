@@ -338,3 +338,55 @@ condition?Statement1:Statement2;
 
 var num = Number(prompt("Enter the Number : "))
 num%2==0?document.write(`${num} is Even`):document.write(`${num} is Odd`)
+
+
+/*
+8.               Increment(++)  i.e x=x+1
+        Pre-Increment           Post-Increment
+        (++oprand)              (operand++)
+        -------------           --------------
+        First Increment         first Assignment
+        then Assignment         then Increment
+
+                 Decrement(--)  i.e x=x-1
+        Pre-Decrement           Post-Decrement
+        (--oprand)              (operand--)
+        -------------           --------------
+        First Decrement         first Assignment
+        then Assignment         then Decrement
+ */
+
+
+var a = 10
+var b = a++ //b = 10    a = 11
+var c = ++a //a = 12    c = 12
+var d = --a //a = 11    d = 11
+var e = a-- //e = 11    a = 10
+--a         //a = 9
+a--         //a = 8
+console.log(a,b,c,d,e)
+
+
+var a = 10
+var b = a++ + ++a   // 10->11 + 12->12 = 10+12
+console.log(a,b)    // 12, 22
+
+
+var a = 10
+var b = --a - a--      // 9->9 - 9->8
+console.log(a,b)       // 8, 0
+
+
+var a = 10
+var b = --a - --a           // 9->9 - 8->8
+var c = --a - --a + b-- - --b   // 7->7 - 6->6 + 1->0 - -1->-1
+console.log(a,b,c)          // 6, -1, 3
+
+
+        
+
+/*
+WAP to Check whether a person can vote or not
+WAP to check whether two numbers are equal or not
+WAP to check whether a number is perfect square number or not
+ */
