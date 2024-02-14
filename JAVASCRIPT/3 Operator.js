@@ -153,3 +153,48 @@ Precedence: R to L
     a=a%b         =>      a%=b
     a=a**b        =>      a**=b
 */
+
+/*
+4.  Relational Operator:
+    used to compare two operands
+    <       Less Than
+    <=      Less Than Equal
+    >       Greater Than 
+    >=      Greater Than Equal
+    !=      not Equal       (check only value)
+    !==     not Identical   (check value and data type both)
+    ==      Equal           (check value only)
+    ===     Identical       (check valye and data type both)
+*/
+                    
+console.log(10<20)   //true
+console.log(10<=20)  //true
+console.log(100<20)  //false
+console.log(100<=20) //false
+console.log(20<20)   //false
+console.log(20<=20)  //true
+
+console.log(10>20)   //false
+console.log(10>=20)  //false
+console.log(100>20)  //true
+console.log(100>=20) //true
+console.log(20>20)   //false
+console.log(20>=20)  //true
+
+console.log(10==10)     //true
+console.log(10=="10")   //true
+console.log(10==10.0)   //true
+console.log(10==20)     //false
+
+console.log(10===10)     //true
+console.log(10==="10")   //false
+console.log(10===10.0)   //true
+console.log(10===20)     //false
+
+console.log(10!=20)         //true
+console.log(10!=10)         //false
+console.log(10!="10")       //false
+
+console.log(10!==20)         //true
+console.log(10!==10)         //false
+console.log(10!=="10")       //true
