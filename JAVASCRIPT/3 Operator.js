@@ -282,3 +282,47 @@ e=a^b       :   1   1   1   1   1   0   0
                 ---------------------------
                 64  32  61  8   4   0   0   =>124
  */
+
+/*
+Bitwise Left Shift and Right Shift
+Biwise Left Shift
+        num<<n
+    i.e num*2**n
+    eg. 25<<10
+    eg. 25*2**10
+    i.e 25*1024
+    i.e 25600
+
+Bitwise Right Shift
+        num>>n
+    i.e num/2**n
+    eg. 2500>>5
+    eg. 2500/2**5
+    i.e 2500/32
+    i.e 78
+ */
+
+console.log(25<<10)
+console.log(35<<6)
+console.log(45<<8)
+console.log(4500>>8)
+
+
+/*
+Bitwise Negation Operator:
+                    ~
+                    (-x-1)
+        +ve 20                     -ve  -30
+
+        -ve -20                    +ve  30
+        -1  -1                     -1   -1
+        ----------------------------------
+            -21                         29
+                    -
+                    (-x)
+        +ve 20                     -ve  -30
+
+        -ve -20                    +ve  30
+        ----------------------------------
+            -20                         30
+*/
