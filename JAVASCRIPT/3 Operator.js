@@ -326,3 +326,15 @@ Bitwise Negation Operator:
         ----------------------------------
             -20                         30
 */
+
+/*
+7. Conditional Operator or Ternary Operator(?:)
+used when we have to execute a statement out of
+two statements according to a condition
+syntax:
+condition?Statement1:Statement2;
+            True      False
+*/
+
+var num = Number(prompt("Enter the Number : "))
+num%2==0?document.write(`${num} is Even`):document.write(`${num} is Odd`)
