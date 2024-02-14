@@ -128,3 +128,28 @@ console.log(a)
 36+25
 61
  */
+
+/*
+2. Assignment Operator(=):
+used to assign value of RHS operand to LHS operand
+eg. sum=a+b;    //valid
+eg. a+b=sum;    //invalid
+eg. a=b=c;      //valid
+
+Category: Binary
+Precedence: R to L
+ */
+
+
+
+/* 
+3. Composite/Compound/Short Hand Operators
+                combination of Assignmnet Operator with other 
+                operators
+    a=a+b         =>      a+=b
+    a=a-b         =>      a-=b
+    a=a*b         =>      a*=b
+    a=a/b         =>      a/=b
+    a=a%b         =>      a%=b
+    a=a**b        =>      a**=b
+*/
