@@ -198,3 +198,87 @@ console.log(10!="10")       //false
 console.log(10!==20)         //true
 console.log(10!==10)         //false
 console.log(10!=="10")       //true
+
+/*
+5.  Logical Operators:
+    used to make a compound condition
+
+    Operator    symbol  operation               type    precedence
+    Logical And &&      return true if all      binary  L to R
+                        conditions are true
+                        else return false
+    Logical Or  ||      return true if atleast  binary  L to R
+                        one condition is true
+                        else return false
+    Logical Not !       return true if condition Unary  R to L
+                        is false and return 
+                        false if condition is 
+                        true
+ */
+
+console.log(10 && 20)           //true i.e 20
+console.log(10 && 0)            //false i.e 0
+console.log(0 && 20)            //false i.e 0
+console.log(0 && 0)             //false i.e 0
+console.log(10 && false)        //false i.e false
+console.log(false && "Nitin")   //false i.e false
+
+console.log(10 || 20)               //true i.e 10
+console.log(10 || 0)                //true i.e 10
+console.log(0 || 20)                //true i.e 20
+console.log(0 || 0)                //false i.e 0
+console.log(0 || false)            //false i.e false
+
+console.log(!10)                    //false
+console.log(!0)                     //true
+
+//! 0 null undefined empty string false -> all are false
+//! and any other value if true
+
+
+
+
+/*
+6. Bitwise Operator:
+
+Operators               Symbols     Type    Precedence
+1. Bitwise And          &           Binary  L to R
+2. Bitwise Or           |           Binary  L to R
+3. Bitwise Xor          ^           Binary  L to R
+4. Bitwise Left Shift   <<          Binary  L to R
+5. Bitwise Right Shift  >>          Binary  L to R
+6. Bitwise Negation     ~,-         Unary   R to L
+
+a   b   a&b a|b a^b(a|b - a&b)
+0   0   0    0   0
+0   1   0    1   1
+1   0   0    1   1
+1   1   1    1   0
+ */
+
+var a = 39
+var b = 63
+var c = a&b 
+var d = a|b
+var e = a^b
+console.log(c,d,e)
+
+/*
+a   =   49  :   0   1   1   0   0   0   1   
+b   =   77  :   1   0   0   1   1   0   1   
+-------------------------------------------
+c=a*b       :   0   0   0   0   0   0   1
+                64  32  16  8   4   2   1
+                ---------------------------
+                0   0   0   0   0   0   1   =>1
+-----------------------------------------------
+d=a|b       :   1   1   1   1   1   0   1
+                64  32  16  8   4   2   1
+                ---------------------------
+                64  32  16  8   4   0   1   =>125
+-------------------------------------------------
+e=a^b       :   1   1   1   1   1   0   0
+                64  32  16  8   4   2   1
+                ---------------------------
+                64  32  61  8   4   0   0   =>124
+ */
