@@ -121,3 +121,53 @@ syntax:
         ------
     }
  */
+
+
+var a = Number(prompt("Enter the First Number : "))
+var b = Number(prompt("Enter the Second Number : "))
+var c = Number(prompt("Enter the Third Number : "))
+if(a<b){
+    if(a<c)
+    document.write(`${a} is Smallest`)
+    else
+    document.write(`${c} is Smallest`)
+}
+else{
+    if(b<c)
+    document.write(`${b} is Smallest`)
+    else
+    document.write(`${c} is Smallest`)
+}
+
+
+
+// WAP to check whether a Year is Leap Year or Not
+var year = Number(prompt("Enter the Year Number : "))
+if(year%100==0){
+    if(year%400==0)
+    document.write(`${year} is a Leap Year`)
+    else
+    document.write(`${year} is not a Leap Year`)
+}
+else{
+    if(year%4==0)
+    document.write(`${year} is a Leap Year`)
+    else
+    document.write(`${year} is not a Leap Year`)
+}
+
+
+var year = Number(prompt("Enter the Year Number : "))
+if (year % 400 == 0)
+    document.write(`${year} is a Leap Year`)
+else if (year % 4 == 0 && year%100!=0)
+    document.write(`${year} is a Leap Year`)
+else
+    document.write(`${year} is not a Leap Year`)
+
+var year = Number(prompt("Enter the Year Number : "))
+if (year % 400 == 0 || year % 4 == 0 && year%100!=0)
+    document.write(`${year} is a Leap Year`)
+else
+    document.write(`${year} is not a Leap Year`)
+
