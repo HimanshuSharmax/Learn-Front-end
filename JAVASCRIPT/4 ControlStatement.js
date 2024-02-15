@@ -171,3 +171,51 @@ if (year % 400 == 0 || year % 4 == 0 && year%100!=0)
 else
     document.write(`${year} is not a Leap Year`)
 
+
+/*
+ if else if ladder : when we have n number of conditions
+ syntax:
+    if(condition1){
+        -----
+        -----
+    }
+    else if(condition2){
+        -----
+        -----
+    }
+    else if(condition3){
+        -----
+        -----
+    }
+    else if(condition4){
+        ------
+        ------
+    }
+    --
+    --
+    --
+    else if(conditionN){
+        ------
+        ------
+    }
+    else{
+        ------
+        ------
+    }
+ */
+
+var a = Number(prompt("Enter the First Number : "))
+var b = Number(prompt("Enter the Second Number : "))
+var c = Number(prompt("Enter the Third Number : "))
+var d = Number(prompt("Enter the Fourth Number : "))
+var e = Number(prompt("Enter the Fifth Number : "))
+if(a>=b && a>=c && a>=d && a>=e)
+document.write(`${a} is Greatest`)
+else if(b>=c && b>=d && b>=e)
+document.write(`${b} is Greatest`)
+else if(c>=d && c>=e)
+document.write(`${c} is Greatest`)
+else if(d>=e)
+document.write(`${d} is Greatest`)
+else
+document.write(`${e} is Greatest`)
