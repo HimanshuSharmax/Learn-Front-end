@@ -53,3 +53,71 @@ console.log("Hello World3")
 console.log("Hello World4")
 console.log("Hello World5")
 console.log("Hello World6")
+
+
+1.  //!  if else Statement
+/* used when execution of one Statement Block
+                   out of two block depends on a condition
+syntax:
+if(condition){
+    -----
+    number of Statements block1
+    -----
+}
+else{
+    -----
+    number of Statements block2
+    -----
+}
+ */
+
+var num = Number(prompt("Enter the Number :  "))
+if(num%2==0)
+document.write(`${num} is Even`)
+else
+document.write(`${num} is Odd`)
+
+
+/*
+WAP to Check whether a person can vote or not
+WAP to check whether two numbers are equal or not
+*/
+
+
+// WAP to check whether a number is perfect square number or not
+var num = Number(prompt("Enter the Number : "))
+var n = parseInt(num**0.5)
+if(n*n==num)
+document.write(`${num} is Perfect Square Number`)
+else
+document.write(`${num} is not a Perfect Square Number`)
+
+2. //! Nested if Else
+/* if else within if else Statement
+syntax:
+    if(condition1){
+        ------
+        if(condition2){
+            -----
+            -----
+        }
+        else{
+            ----
+            ----
+        }
+        ------
+    }
+    else
+    {
+        ------
+        if(condition3){
+            -----
+            -----
+        }
+        else{
+            ----
+            ----
+        }
+        ------
+    }
+ */
