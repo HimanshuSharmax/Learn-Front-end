@@ -334,3 +334,42 @@ switch (ch) {
 Iteration Statements or Loops:
 used to iterate or repeat number of statements n times
 */
+
+1  //!  for loop
+/* use when we know number of iterations
+syntax:
+
+    for(Initialization;condition;updation){
+        -----------
+        -----------
+        number of statements
+        -----------
+        -----------
+    }
+ */
+
+for(var i=1;i<=10;i++){
+    console.log(`Hello World ${i}`)
+}
+
+for(var i=10;i>=1;i--){
+    console.log(`Hello World ${i}`)
+}
+
+for(var i=10;i;i--){
+    console.log(`Hello World ${i}`)
+}
+
+for(var i=1;i<=10;++i){
+    console.log(`Hello World ${i}`)
+}
+
+for (var i = 1; i <= 10; i = ++i) {
+    console.log(`Hello World ${i}`)
+}
+
+
+for (var i = 1; i <= 10; i++);
+{
+    console.log(`Hello World ${i}`)
+}
