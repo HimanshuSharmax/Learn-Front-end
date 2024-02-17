@@ -373,3 +373,31 @@ for (var i = 1; i <= 10; i++);
 {
     console.log(`Hello World ${i}`)
 }
+
+// let i = 1;
+// for (;;)
+// {
+//     if(i>10)
+//     break
+//     console.log(`Hello World ${i}`)
+//     i++
+// }
+
+for(var i=1;i<=10;i++){
+    if(i%2==0)
+    continue
+    console.log(`Hello World ${i}`)
+}
+
+var num = Number(prompt("Enter the Number : "))
+for (let i = 1; i <= 10; i++) {
+    document.write(`${num} * ${i} = ${num*i}<br>`)
+}
+
+var start = Number(prompt("Enter the Range\nStart From : "))
+var end = Number(prompt("To : "))
+var sum = 0
+for(let i=start;i<=end;i++){
+    sum = sum+i
+}
+document.write(`sum of Numbers from ${start} to ${end} = ${sum}`)
