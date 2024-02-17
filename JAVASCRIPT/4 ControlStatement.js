@@ -219,3 +219,85 @@ else if(d>=e)
 document.write(`${d} is Greatest`)
 else
 document.write(`${e} is Greatest`)
+
+// Wap to check whether an entered character is lower case vowel,lower case consonant,upper case vowel,upper case consonant,digit,space or any special character
+var ch = prompt("Enter the Character : ")
+if(ch.length!=1)
+document.write(`'${ch}' is Invalid`)
+else{
+    if(ch>='a' && ch<='z'){
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+        document.write(`'${ch}' is Lower Case Vowel`)
+        else
+        document.write(`'${ch}' is Lower Case Consonant`)
+    }
+    else if(ch>='A' && ch<='Z'){
+        if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+        document.write(`'${ch}' is Upper Case Vowel`)
+        else
+        document.write(`'${ch}' is Upper Case Consonant`)
+    }
+    else if(ch>='0' && ch<='9')
+    document.write(`'${ch}' is a Digit`)
+    else if(ch==' ')
+    document.write(`'${ch}' is Space`)
+    else
+    document.write(`'${ch}' is a Special Character`)
+}
+
+
+3. //! Switch Case Statement:
+/*  used to make a menu based program
+syntax:
+    switch(expression){
+        case constant1:
+            ------
+            ------
+            break
+        case constant2:
+            ------
+            ------
+            break
+        case constant3:
+            ------
+            ------
+            break
+        -
+        -
+        case constantN:
+            ------
+            ------
+            break
+        default:
+            ------
+            ------
+    }
+ */
+
+// var num = Number(prompt("Enter the Month Number : "))
+// switch (num) {
+//     case 1:
+//     case 3:
+//     case 5:
+//     case 7:
+//     case 8:
+//     case 10:
+//     case 12:
+//         document.write("Month has 31 Days")
+//         break
+//     case 4:
+//     case 6:
+//     case 9:
+//     case 11:
+//         document.write("Month has 30 Days")
+//         break
+//     case 2:
+//         num = Number(prompt("Enter Year Number : "))
+//         if (num % 400 == 0 || num % 4 == 0 && num % 100 != 0)
+//             document.write("Month has 29 Days")
+//         else
+//             document.write("Month has 28 Days")
+//         break
+//     default:
+//         document.write("Invalid Choice")
+// }
