@@ -476,3 +476,30 @@ while(num!=0){          //14582  1458   145     14      1       0
     num = parseInt(num/10)//1458 145    14      1       0
 }
 document.write(`sum = ${sum}`)
+
+
+*
+while Loop Questions:
+1. WAP to calculate sum of even and odd digits of a specific number
+2. WAP to count even and odd digits in a number
+3. WAP to check whether a number is NEON number or not
+    (1,9)
+4. WAP to check whether a number is Armstrong number or not
+    (1,153,370,371,407)
+5. WAP to check whether a number is Palindrome Number or not
+    (121,1234321)
+6. WAP to check whether a number is Magical Number or not
+    (81,1458,1729)
+ */
+
+
+
+//  WAP to reverse a number
+var num = parseInt(prompt("Enter the Number : "))
+var rev = 0
+while (num != 0) {          //1234      123         12          1               0          
+    let r = num % 10        //4         3           2           1
+    rev = rev * 10 + r      //0*10+4=4  4*10+3=43   43*10+2=432 432*10+1=4321
+    num = parseInt(num / 10)//123       12          1           0
+}
+document.write(`Reverse = ${rev}`)
