@@ -503,3 +503,27 @@ while (num != 0) {          //1234      123         12          1               
     num = parseInt(num / 10)//123       12          1           0
 }
 document.write(`Reverse = ${rev}`)
+
+
+3. //! do while Loop:
+/* used when we have to execute number of statements atleast one
+time whether condition is false
+
+syntax:
+Initialization
+do
+{
+    ------
+    ------
+    number of Statements
+    ------
+    ------
+    updation
+}while(condition);
+ */
+
+// let i = 1
+// do{
+//     console.log(`Hello World ${i}`)
+//     i++
+// }while(i<=10)
