@@ -401,3 +401,25 @@ for(let i=start;i<=end;i++){
     sum = sum+i
 }
 document.write(`sum of Numbers from ${start} to ${end} = ${sum}`)
+
+/*
+for Loop Questions:
+1. WAP to print sum of Even and Odd Numbers in specific Range
+2. WAP to print factorial of any specific number
+3. WAP to check whether a number is perfect number or not
+*/
+
+
+// WAP to check whether a number is prime number or not
+var num = Number(prompt("Enter the Number : "))
+var flag = false
+for(let i=2;i<=num**0.5;i++){
+    if(num%i==0){
+        flag = true
+        break
+    }
+}
+if(flag==false && num>=2)
+document.write(`${num} is Prime`)
+else
+document.write(`${num} is not Prime`)
