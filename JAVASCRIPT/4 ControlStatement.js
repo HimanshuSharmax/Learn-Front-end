@@ -527,3 +527,33 @@ do
 //     console.log(`Hello World ${i}`)
 //     i++
 // }while(i<=10)
+
+
+do {
+    var a = Number(prompt("Enter the First Number : "))
+    var b = Number(prompt("Enter the Second Number : "))
+    var ch = prompt("Press + for Addition\nPress - for Subtraction\nPress * for Multiplication\nPress / for Division\nPress % for Remainder\nPress ** for Power\nEnter Your Choice : ")
+    switch (ch) {
+        case "+":
+           alert(`${a} + ${b} = ${a + b}`)
+            break
+        case "-":
+           alert(`${a} - ${b} = ${a - b}`)
+            break
+        case "*":
+           alert(`${a} * ${b} = ${a * b}`)
+            break
+        case "/":
+           alert(`${a} / ${b} = ${a / b}`)
+            break
+        case "%":
+           alert(`${a} % ${b} = ${a % b}`)
+            break
+        case "**":
+           alert(`${a} ** ${b} = ${a ** b}`)
+            break
+        default:
+           alert("Invalid Choice")
+    }
+    ch = prompt("Press n to Exit\nPress any Other Key to Continue : ")
+} while (ch != 'n')
