@@ -458,3 +458,21 @@ if(flag==false && num>=2)
 document.write(`${num} is Prime`)
 else
 document.write(`${num} is not Prime`)
+
+
+/*
+num = 100
+a   =   0   1   1   2   3   5   8   13  21  34  55   
+b   =   1   1   2   3   5   8   13  21  34  55  89
+sum =   1   2   3   5   8   13  21  34  55  89  144
+OP:0  1 1   2   3   5   8   13  21  34  55  89
+ */
+
+var num = Number(prompt("Enter the Number : "))
+var sum = 0
+while(num!=0){          //14582  1458   145     14      1       0
+    let r = num%10      //2      8      5       4       1
+    sum = sum+r         //0+2=2  2+8=10 10+5=15 15+4=19 19+1=20
+    num = parseInt(num/10)//1458 145    14      1       0
+}
+document.write(`sum = ${sum}`)
