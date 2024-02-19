@@ -419,6 +419,41 @@ for(let i=2;i<=num**0.5;i++){
         break
     }
 }
+
+2. //! while Loop:
+/* used when we does not have a fix idea of number of iterations
+syntax:
+    Initialization
+    while(condition){
+        -----
+        -----
+        number of statements
+        -----
+        -----
+        updation
+    }
+ */
+
+// let i = 1
+// while(i<=10){
+//     console.log(`Hello World ${i}`)
+//     i++
+// }
+
+
+//fibonacci Series: 0   1   1   2   3   5   8   13  21  34  .....
+var num = Number(prompt("Enter the Last Term Range : "))
+var a = 0
+var b = 1
+var sum = a+b
+document.write(`${a} ${b} `)
+while(sum<=num){
+    document.write(`${sum} `)
+    a = b
+    b = sum
+    sum = a+b
+}
+
 if(flag==false && num>=2)
 document.write(`${num} is Prime`)
 else
