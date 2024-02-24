@@ -557,3 +557,121 @@ do {
     }
     ch = prompt("Press n to Exit\nPress any Other Key to Continue : ")
 } while (ch != 'n')
+
+4. //! Nested loops:
+// Loops within Loops:
+
+
+for (let num = 1; num <= 20; num++) {
+    document.write(`Table of ${num} is<br>`)
+    for (let i = 1; i <= 10; i++) {
+        document.write(`${num} * ${i} = ${num * i}<br>`);
+    }
+}
+
+
+//2. WAP to print and count all palindrome numbers in a range
+
+
+// WAP to print  all perfect numbers(6,28,496,8128) (6-> sum>=1+2+3=6  divisor of 6=>1,2,3  num==sum)
+let nums = Number(prompt("Enter number: "));
+let sums = 0;
+for(let i = 1; i <= nums/2; i++){
+    if(nums % i == 0){
+        sums = sum + i;
+    }
+}
+if(nums == sums){
+    console.log(`${nums} is perfect number`);
+}else{
+    console.log(`${nums} is not perfect number`);
+}
+
+
+
+//WAP to print and count all armstrong numbers(153,370,371,407) 
+// 153-> 1*1*1 + 5*5*5 + 3*3*3 = 153
+var start = Number(prompt("Enter the Range\nStart From : "))
+var end = Number(prompt("To : "))
+
+for (let i = start; i <= end; i++) {
+    // let d = num.toString().length
+    let d = 0 
+    let num = i
+    while (num != 0) {
+        d++
+        num = parseInt(num / 10)
+    }
+    num = i
+    let sum = 0
+    while(num!=0){
+        let r = num%10
+        sum = sum+r**d
+        num = parseInt(num/10)
+    }
+    if(sum==i)
+    document.write(`${i}<br>`)
+}
+
+
+// WAP to print all magical Numbers (81,1458,1729)
+for(let i = 1;i<=2000;i++){
+        let sum = 0
+        let num = i                 //1458
+        while(num!=0){              //1458  145     14      1       0
+            let r = num%10          //8     5       4       1
+            sum = sum+r             //0+8=8 8+5=13  13+4=17 17+1=18
+            num = parseInt(num/10)  //145   14      1       0
+        }
+        let rev = 0
+        num = sum                   //18        
+        while(num!=0){              //18        1           0
+            let r = num%10          //8         1
+            rev = rev*10+r          //0*10+8=8  8*10+1=81
+            num = parseInt(num/10)  //1         0
+        }
+        if(sum*rev===i)
+        console.log(i)
+    }
+
+
+
+/*
+Pattern
+*****
+*****
+*****
+*****
+*****
+*/
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5; j++){
+        document.write("*")
+    }
+    document.write("<br>")
+}
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5; j++){
+        process.stdout.write("*")
+    }
+    console.log()
+}
+
+
+
+/*
+*
+**
+***
+****
+*****
+*/
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++){
+        process.stdout.write("*")
+    }
+    console.log()
+}
