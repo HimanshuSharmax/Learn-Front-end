@@ -30,3 +30,21 @@ if(flag==false && num>=2)
 document.write(`${num} is Prime`)
 else
 document.write(`${num} is not Prime`)
+
+
+4. // Factorial of Number
+
+
+
+5. //fibonacci Series: 0   1   1   2   3   5   8   13  21  34  .....
+var num = Number(prompt("Enter the Last Term Range : "))
+var a = 0
+var b = 1
+var sum = a+b
+document.write(`${a} ${b} `)
+while(sum<=num){
+    document.write(`${sum} `)
+    a = b
+    b = sum
+    sum = a+b
+}
