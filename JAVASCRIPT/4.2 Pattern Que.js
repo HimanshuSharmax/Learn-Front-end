@@ -95,3 +95,44 @@ for (let i = 5; i >= 1; i--) {
     }
     document.write("<br>")
 } 
+
+/*
+     *
+    ***
+   *****
+  *******
+ *********
+ */
+
+
+ for (let i = 1; i <= 5; i++) {
+    // for space
+    for(let s = 1;s<=5-i;s++){
+        document.write("&nbsp;&nbsp;")          
+    }
+    // printing *
+    for (let j = 1; j <= 2 * i - 1; j++) {
+        document.write("*");
+      }
+    document.write("<br>")
+}
+
+
+
+/*
+ *********
+  *******
+   *****
+    ***
+     *
+ */
+
+for (let i = 5; i >= 1; i--) {
+
+      // printing *
+      for (let j = 1; j <=i; j++) {
+        document.write("*");
+      }
+  
+    document.write("<br>")
+}   
