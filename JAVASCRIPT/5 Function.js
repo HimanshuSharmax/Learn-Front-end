@@ -89,3 +89,30 @@ function sample(){
     console.log("sum = ",s)
 }
 sample()
+
+
+//! 3. function without return value with parameter
+function add(x,y){          //parameters or formal parameters
+    var sum = x+y
+    console.log("sum = ",sum)
+}
+function sample(){
+    var a = 10
+    var b = 20
+    add(a,b)                //arguments or actual parameter
+}
+sample()
+
+
+//! 4. function with return value with parameter
+function add(x,y){          
+    var sum = x+y
+    return sum
+}
+function sample(){
+    var a = 10
+    var b = 20
+    let s = add(a,b)                
+    console.log("sum = ",s)
+}
+sample()
