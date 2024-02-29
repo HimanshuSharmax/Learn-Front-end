@@ -7,7 +7,7 @@
  * 1. function provide a feature of code reusability
  * 2. function decrease instruction  space of a program
  * 3. function decrease data space of a program
- * 4. function increase code readability
+ * 4. function increase code readability 
 
 Note1: a function can't access variables defined in other function
        directly to do so we have to use concept of arguments and
