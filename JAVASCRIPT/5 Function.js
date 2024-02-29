@@ -60,3 +60,32 @@ function fun3(){
 console.log("In main Scope")
 fun1()
 console.log("Back to main Scope")
+
+//! 1. function without return value without parameter
+function add(){
+    var a = 10
+    var b = 20
+    var sum = a+b
+    console.log("sum = ",sum)
+}
+function sample(){
+    add()
+}
+sample()
+
+
+//! 2. function with return value without parameter
+function add(){
+    var a = 10
+    var b = 20
+    var sum = a+b
+    return sum
+}
+function sample(){
+    console.log("sum = ",add())
+}
+function sample(){
+    var s = add()
+    console.log("sum = ",s)
+}
+sample()
