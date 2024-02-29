@@ -88,7 +88,7 @@ function sample(){
     var s = add()
     console.log("sum = ",s)
 }
-sample()
+sample() 
 
 
 //! 3. function without return value with parameter
