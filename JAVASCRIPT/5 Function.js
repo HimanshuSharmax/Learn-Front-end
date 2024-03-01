@@ -239,3 +239,13 @@ function test(a){
 console.log("In main Scope")
 test(0)
 console.log("Back to  main Scope")
+
+// Factorial using recursion
+function fact(num){
+    if(num<=1)
+    return 1 
+    else
+    return num*fact(num-1)
+}
+console.log(fact(5))
+console.log(fact(10))
