@@ -183,3 +183,59 @@ test()
 
 var add = (x,y)=>x+y
 console.log(add(10,20))
+
+//storage class
+/**
+var             function level
+let             block level
+const           block level
+no keyword      global
+ */
+
+
+function test(){
+     if(true){
+         a = 10          //Global Variable
+         var b = 20      //Function Level Variable
+         let c = 30      //Block Level Variable {}
+         const d = 40    //Block Level Variable {}
+         console.log(`In if block of test() a = ${a} b = ${b} c = ${c} and d = ${d}`)
+     }
+     console.log(`In if block of test() a = ${a} b = ${b}`)
+ }
+ test()
+ console.log(`In if block of test() a = ${a}`)
+
+ function sample(){
+     console.log(`In sample a = ${a}`)
+ }
+ sample()
+ 
+ 
+ 
+//! Recursion: when function call itself
+
+var a = 0                       // Global var
+function test(){
+    ++a
+    console.log("In test()")
+    if(a<5)
+    test()
+    console.log("Back to test()")
+}
+console.log("In main Scope")
+test()
+console.log("Back to  main Scope")
+
+
+
+function test(a){
+    ++a
+    console.log("In test()")
+    if(a<5)
+    test(a)
+    console.log("Back to test()")
+}
+console.log("In main Scope")
+test(0)
+console.log("Back to  main Scope")
