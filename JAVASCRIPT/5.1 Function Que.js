@@ -103,3 +103,25 @@ if (isNeonNumber(Number)) {
 } else {
     console.log(`${Number} is not a Neon number.`);
 }
+
+
+//! 7. WAP to check whether a number is Armstrong number or not  (1,153,370,371,407)
+function Armstrong(number) {
+    const numStr = String(number);
+    const numDigits = numStr.length;
+
+    let sum = 0;
+    for (let i = 0; i < numDigits; i++) {
+        const digit = parseInt(numStr[i]);
+        sum = sum + Math.pow(digit, numDigits);
+    }
+
+    return sum === number;
+}
+
+const number = 153; 
+if (Armstrong(number)) {
+    console.log(`${number} is an Armstrong number.`);
+} else {
+    console.log(`${number} is not an Armstrong number.`);
+}
