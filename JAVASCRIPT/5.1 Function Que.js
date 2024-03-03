@@ -31,3 +31,36 @@ function reverseNum(num){
 }
 
 console.log(reverseNum(234));
+
+//! 3. WAP to print factorial of any specific number
+let n = 5;
+function factorial(n) { 
+	if (n === 0) { 
+		return 1; 
+	} 
+	else { 
+		return n * factorial(n - 1); 
+	} 
+} 
+
+console.log(factorial(n));
+
+
+//! 4. WAP to print fibonacci Series:
+function FibonacciSeries(num) {
+     let a = 0; 
+     let b = 1;
+     let sum = a + b;
+     let series = `${a} ${b}`;
+     
+     while (sum <= num) {
+         series += ` ${sum} `;
+         a = b;
+         b = sum;
+         sum = a + b;
+     }
+     return series;
+ }
+ 
+console.log((FibonacciSeries(10)));
+ 
