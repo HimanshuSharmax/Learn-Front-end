@@ -64,3 +64,21 @@ function FibonacciSeries(num) {
  
 console.log((FibonacciSeries(10)));
  
+
+//! 5. WAP to check whether a number is prime number or not
+function isPrime(num) {
+     if (num < 2) {
+         return `${num} is not Prime`;
+     }
+ 
+     for (let i = 2; i <= Math.sqrt(num); i++) {
+         if (num % i === 0) {
+             return `${num} is not Prime`;
+         }
+     }
+ 
+     return `${num} is Prime`;
+ }
+ 
+console.log(isPrime(13));
+console.log(isPrime(66));
