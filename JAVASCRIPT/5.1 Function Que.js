@@ -82,3 +82,24 @@ function isPrime(num) {
  
 console.log(isPrime(13));
 console.log(isPrime(66));
+
+
+//! 6. WAP to check whether a number is NEON number or not (1,9)
+function isNeonNumber(number) {
+    let square = number * number;
+    let digitSum = 0;
+
+    while (square > 0) {
+        digitSum = digitSum + square % 10;
+        square = parseInt(square / 10);
+    }
+
+    return digitSum === number;
+}
+
+const Number = 9;
+if (isNeonNumber(Number)) {
+    console.log(`${Number} is a Neon number.`);
+} else {
+    console.log(`${Number} is not a Neon number.`);
+}
