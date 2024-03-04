@@ -144,3 +144,33 @@ function palindromeNum(num) {
 
 palindromeNum(121)
 palindromeNum(5688)
+
+
+//! 9. WAP to print all magical Number (81,1458,1729)
+function findMagicalNumbers() {
+     for (let i = 1; i <= 2000; i++) {
+         let sum = 0;
+         let num = i;
+ 
+         while (num !== 0) {
+             let r = num % 10;
+             sum = sum + r;
+             num = parseInt(num / 10);
+         }
+ 
+         let rev = 0;
+         num = sum;
+ 
+         while (num !== 0) {
+             let r = num % 10;
+             rev = rev * 10 + r;
+             num = parseInt(num / 10);
+         }
+ 
+         if (sum * rev === i) {
+             console.log(i);
+         }
+     }
+ }
+ 
+ findMagicalNumbers();
