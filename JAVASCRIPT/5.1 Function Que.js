@@ -125,3 +125,22 @@ if (Armstrong(number)) {
 } else {
     console.log(`${number} is not an Armstrong number.`);
 }
+
+//! 8. WAP to check whether a number is Palindrome Number or not (121,1234321)
+function palindromeNum(num) {
+     let rem, temp, final = 0;
+     temp = num;
+     while(num > 0){
+          rem = num % 10;
+          num = parseInt(num / 10);
+          final = final * 10 + rem;
+     }
+     if(final == temp){
+          console.log(`${temp} is Palindrome Number!`);
+     }else{
+          console.log(`${temp} is not Palindrome Number!`);
+     }
+}
+
+palindromeNum(121)
+palindromeNum(5688)
