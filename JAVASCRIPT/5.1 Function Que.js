@@ -174,3 +174,24 @@ function findMagicalNumbers() {
  }
  
  findMagicalNumbers();
+
+
+//! 10. WAP to check perfect numbers(6,28,496,8128)
+function checkPerfectNumber(nums) {
+     let sums = 0;
+ 
+     for (let i = 1; i <= nums / 2; i++) {
+         if (nums % i === 0) {
+             sums = sums + i;
+         }
+     }
+ 
+     if (nums === sums) {
+         console.log(`${nums} is a perfect number`);
+     } else {
+         console.log(`${nums} is not a perfect number`);
+     }
+ }
+ 
+checkPerfectNumber(496);
+checkPerfectNumber(23);
