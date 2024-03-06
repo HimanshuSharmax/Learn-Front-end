@@ -72,3 +72,21 @@ B=66    b=98    1=49
 -
 Z=90    z=122   9=57
 */
+
+
+3 // fromCharCode(): convert a Unicode into Character
+
+for(let i=1;i<=10000;i++){
+    document.write(`${i} = ${String.fromCharCode(i)} `)
+}
+
+/*
+indexOf()     :   return first index of any substring in string
+                  and return -1 if item not found in string
+lastIndexOf() :   return last index of any substring in string
+                  and return -1 if item not found in string
+search()      :   return first index of any substring in string
+                  and return -1 if item not found in string
+includes()    :   check whether a substring is exist in string or not
+                  it return true of false
+*/
