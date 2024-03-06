@@ -48,3 +48,27 @@ for(const i in a){
 for(const i of a){
     console.log(i)
 }
+
+//!string methods ->
+1 // charAt() return character at any specific index
+console.log(a[0],a.charAt(0))
+console.log(a[1],a.charAt(1))
+console.log(a[2],a.charAt(2))
+console.log(a[3],a.charAt(3))
+console.log(a[4],a.charAt(4))
+
+
+2 // charCodeAt(): return Unicode of first character of String if no argument is provided,
+  //    and if argument is provided, then it return Unicode of that particular character
+
+// console.log(a.charCodeAt())
+for(let i in a){
+    console.log(`${a[i]} = ${a.charCodeAt(i)}`)
+}
+
+/*
+A=65    a=97    0=48
+B=66    b=98    1=49
+-
+Z=90    z=122   9=57
+*/
