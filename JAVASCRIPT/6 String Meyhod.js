@@ -90,3 +90,35 @@ search()      :   return first index of any substring in string
 includes()    :   check whether a substring is exist in string or not
                   it return true of false
 */
+
+
+var a = "Javascript is a high level scripting language"
+console.log(a.indexOf("e"))
+console.log(a.lastIndexOf("e"))
+console.log(a.search("e"))
+console.log(a.includes("e"))
+
+console.log(a.indexOf("script"))
+console.log(a.lastIndexOf("script"))
+console.log(a.search("script"))
+console.log(a.includes("script"))
+
+console.log(a.indexOf("php"))
+console.log(a.lastIndexOf("php"))
+console.log(a.search("php"))
+console.log(a.includes("php"))
+
+
+// Copy a string into another ->
+var b = a
+console.log(`Copied String is ${b}`)
+
+
+// concat() : concat one or more strings in a string
+var a = "Ducat"
+var b = "Education"
+var c = "Noida"
+var d = a+b+c
+var e = a.concat(b,c)
+console.log(d)
+console.log(e)
