@@ -122,3 +122,29 @@ var d = a+b+c
 var e = a.concat(b,c)
 console.log(d)
 console.log(e)
+
+
+/*
+startsWith() : check whether a string start with specific
+               sub string or not
+endsWith()   : check whether a string end with specific sub
+               string or not
+*/
+
+var ch = prompt("Enter the String : ")
+if (ch.startsWith("www"))
+    document.write(`'${ch}' is a Domain Name`)
+else if (ch.endsWith("@gmail.com"))
+    document.write(`'${ch}' is a Gmail Address`)
+else
+    document.write(`'${ch}' is a Normal Message`)
+
+
+//toUpperCase()
+//toLocaleUpperCase()
+//toLowerCase()
+//toLocaleLowerCase()
+console.log(a.toLowerCase())
+console.log(a.toLocaleLowerCase())
+console.log(a.toUpperCase())
+console.log(a.toLocaleUpperCase())
