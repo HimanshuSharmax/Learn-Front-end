@@ -159,3 +159,14 @@ console.log(a.substring(5,20))
 console.log(a.slice(5,20))
 console.log(a.slice(20))
 console.log(a.slice(-20))
+
+
+/repeat()  :   create number of copies of a string
+console.log(a.repeat(100))
+
+
+//replace()
+//replaceAll()
+console.log(a)
+console.log(a.replace(" ","-"))
+console.log(a.replaceAll(" ","-"))
