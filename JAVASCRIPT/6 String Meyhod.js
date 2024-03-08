@@ -148,3 +148,14 @@ console.log(a.toLowerCase())
 console.log(a.toLocaleLowerCase())
 console.log(a.toUpperCase())
 console.log(a.toLocaleUpperCase())
+
+
+//substr() return a substring from pos to number of characters
+//substring() return a substring from pos to pos  characters
+//slice()
+console.log(a)
+console.log(a.substr(5,20))
+console.log(a.substring(5,20))
+console.log(a.slice(5,20))
+console.log(a.slice(20))
+console.log(a.slice(-20))
