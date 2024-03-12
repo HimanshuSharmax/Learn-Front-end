@@ -186,3 +186,18 @@ console.log(a.length)
 console.log(a.trim().length)
 console.log(a.trimStart().length)
 console.log(a.trimEnd().length)
+
+
+/*
+localeCompare() : compare two strings
+                    return 0 if both string are same
+                    return 1 if first string comes last in
+                    alphabetical order
+                    return -1 if first string comes firt in
+                    alphabetical order
+*/
+var a = "Aman"
+var b = "Dhruv"
+console.log(a.localeCompare(b))
+console.log(b.localeCompare(a))
+console.log(b.localeCompare(b))
