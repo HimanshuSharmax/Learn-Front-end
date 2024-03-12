@@ -170,3 +170,19 @@ console.log(a.repeat(100))
 console.log(a)
 console.log(a.replace(" ","-"))
 console.log(a.replaceAll(" ","-"))
+
+
+//split()
+console.log(a.split())
+console.log(a.split(" "))
+
+
+//trim() remove all leading white space characters from string from both side
+//trimStart()remove all leading white space characters from string from left side
+//trimEnd()remove all leading white space characters from string from right side
+
+var a = "          Ducat Education Noida     "
+console.log(a.length)
+console.log(a.trim().length)
+console.log(a.trimStart().length)
+console.log(a.trimEnd().length)
