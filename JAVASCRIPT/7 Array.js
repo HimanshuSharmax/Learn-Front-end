@@ -34,3 +34,18 @@ console.log(a)
 
 var a = Array(10,20)
 console.log(a)
+
+//4th type : Array constructor
+var a = Array()
+a.push(10)
+a.push(20)
+a.push(30,40,50,60,70,80,90,100)
+console.log(a)
+
+
+// Array using for Loop
+var a = [10,20,30,40,50,60,70,80,90,100]
+
+for(let i = 0 ;i<a.length;i++){
+  console.log(a[i])
+}
