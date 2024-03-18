@@ -76,3 +76,13 @@ for(const i in a){
 for(const i of a){
   console.log(i)
 }
+
+
+//! toString() -> convert an array into string and use , as separator
+console.log(a)
+console.log(a.toString())
+
+//! join()-> convert an array into string and you can specify seperator by default join function use , as seperator
+console.log(a.join())
+console.log(a.join(" "))
+console.log(a.join(" | "))
