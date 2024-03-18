@@ -86,3 +86,19 @@ console.log(a.toString())
 console.log(a.join())
 console.log(a.join(" "))
 console.log(a.join(" | "))
+
+
+// array: push() pop() shift() unshift() splice() delete ->
+
+//!push():   insert one or more then one element in last of an array and return updated length of array
+var a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+console.log(a)
+console.log("Updated Length of Array After Intertion : ",a.push(110))
+console.log(a)
+console.log("Updated Length of Array After Intertion : ",a.push(120,130,140,150))
+console.log(a)
+
+
+//! pop()     delete an element from last of an array and return deleted array element
+console.log("Deleted Array Element : ",a.pop())
+console.log(a)
