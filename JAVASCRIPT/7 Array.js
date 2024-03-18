@@ -57,3 +57,22 @@ while(i<a.length){
   console.log(a[i])
   i++
 }
+
+
+//Array using do while Loop
+let j = 0
+do{
+  console.log(a[j])
+  j++
+}while(j<a.length)
+
+
+//Array using for in Loop
+for(const i in a){
+  console.log(a[i])
+}
+
+//Array using for of Loop
+for(const i of a){
+  console.log(i)
+}
