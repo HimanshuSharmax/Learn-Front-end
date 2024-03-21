@@ -200,3 +200,34 @@ higherOrderFun(()=>console.log("In Callback function"))
 for(let item of a.entries()){
   console.log(item)
 }
+
+
+//! find()  : return the item from array which pass a test
+//! findIndex():retunn the index of item from array which pass a test
+//! map()   : return an array of containg result for all elements of array
+//! filter(): return an array of items that pass a test
+
+// Using manual code
+var a = [12,14,13,15,16,20,21,3,25,4,54,54,54,54,56,58,49,841,847,8,45]
+
+var result = undefined
+var index = -1
+var output1 = []
+var output2 = []
+for(let i in a){
+  if(a[i]%5==0){
+    output1.push(true)
+    output2.push(a[i])
+    if(result==undefined){
+      result = a[i]
+      index = i
+    }
+  }
+  else{
+    output1.push(false)
+  }
+}
+console.log(result)
+console.log(index)
+console.log(output1)
+console.log(output2)
