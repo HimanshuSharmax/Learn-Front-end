@@ -162,6 +162,41 @@ for(let item of a.values()){
   console.log(item)
 }
 
+
+//! Higher Order function/methods and callback function ->
+// A function is called higher order function if it takes another function as a parameter
+
+//! Callback Function -> 
+// a function is called callback function if it is passed as an argument into another function
+
+function callbackFun(){
+  console.log("IN Callback function")
+}
+function higherOrderFun(callback){
+  console.log("In higher order function")
+  callback()
+  console.log("Back to higher order function")
+}
+higherOrderFun(callbackFun)
+
+
+function higherOrderFun(callback){
+  console.log("In higher order function")
+  callback()
+  console.log("Back to higher order function")
+}
+higherOrderFun(function(){
+  console.log("In Callback function")
+})
+
+
+function higherOrderFun(callback){
+  console.log("In higher order function")
+  callback()
+  console.log("Back to higher order function")
+}
+higherOrderFun(()=>console.log("In Callback function"))
+
 for(let item of a.entries()){
   console.log(item)
 }
