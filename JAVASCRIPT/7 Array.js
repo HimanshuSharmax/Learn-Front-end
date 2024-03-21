@@ -113,3 +113,15 @@ console.log(a)
 //! shift()   delete an element from first position of an array and return deleted array element
 console.log("Deleted Array Element : ",a.shift())
 console.log(a)
+
+//! splice()  used to insert or delete or update elements from any specific position of array and return array of deleted elements
+          // syntax:
+          // array.splice(pos,numberOfItemToDelete,[itemstoInsert])
+console.log("Deleted Array Element : ",a.splice(3,5))
+console.log(a)
+
+console.log("Deleted Array Element : ",a.splice(4,0,41,42,43,44,45))
+console.log(a)
+
+console.log("Deleted Array Element : ",a.splice(4,5,41,42,43,44,45))
+console.log(a)
