@@ -102,3 +102,14 @@ console.log(a)
 //! pop()     delete an element from last of an array and return deleted array element
 console.log("Deleted Array Element : ",a.pop())
 console.log(a)
+
+
+//! unshift() insert one or more then one element element in starting of an array and return updated length of array
+console.log("Updated Length of Array After Intertion : ",a.unshift(5))
+console.log(a)
+console.log("Updated Length of Array After Intertion : ",a.unshift(1,2,3,4))
+console.log(a)
+
+//! shift()   delete an element from first position of an array and return deleted array element
+console.log("Deleted Array Element : ",a.shift())
+console.log(a)
