@@ -125,3 +125,16 @@ console.log(a)
 
 console.log("Deleted Array Element : ",a.splice(4,5,41,42,43,44,45))
 console.log(a)
+
+
+//! delete  : it delete an item from array and leave empty space
+delete a[5]
+console.log(a)
+
+
+//! slice() return a list of items from pos to pos
+var a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250]
+console.log(a)
+console.log(a.slice(5,15))
+console.log(a.slice(15))
+console.log(a.slice(-15))
