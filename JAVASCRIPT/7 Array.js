@@ -138,3 +138,30 @@ console.log(a)
 console.log(a.slice(5,15))
 console.log(a.slice(15))
 console.log(a.slice(-15))
+
+
+
+//! concat()
+var a =  [1,2,3,4,5]
+var b = [10,20,30,40,50]
+var c = [100,200,300,400,500]
+var d = ["Nitin","Amit","Sumit","Satish","Vicky"]
+var e = a.concat(b,c,d)
+console.log(e)
+
+
+
+//! keys() ->   generate an iterator which contains key
+//! values() ->  generate an iterator which contains value
+//! entries() -> generate an iterator which contains key and value of items
+for(let item of a.keys()){
+  console.log(item)
+}
+
+for(let item of a.values()){
+  console.log(item)
+}
+
+for(let item of a.entries()){
+  console.log(item)
+}
