@@ -231,3 +231,24 @@ console.log(result)
 console.log(index)
 console.log(output1)
 console.log(output2)
+
+/ Using HOF
+console.log(a.find((x)=>x%5==0))
+console.log(a.findIndex((x)=>x%5==0))
+console.log(a.map((x)=>x%5==0))
+console.log(a.filter((x)=>x%5==0))
+
+
+
+//! forEach() -> traverse an array element one by one
+var a = [10,20,30,40,50,60,50,80,50,100]
+a.forEach((x)=>console.log(x*5))
+
+
+//! reduce() ->
+function sum(prev,current){
+  return prev+current
+}
+console.log(a.reduce(sum))
+
+console.log(a.reduce((prev,current)=>prev+current))
