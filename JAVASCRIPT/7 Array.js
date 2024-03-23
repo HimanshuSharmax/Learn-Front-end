@@ -265,3 +265,20 @@ console.log(a.indexOf(500))
 //! lastIndexOf() -> return highest index of item from array and return -1 if item not found in Array
 console.log(a.lastIndexOf(50))
 console.log(a.lastIndexOf(500))
+
+
+//! reverse()
+var a = [10,20,30,40,50,60,70,80,90,100]
+console.log(a)
+a.reverse()
+console.log(a)
+
+
+//! sort()
+var a = [15,2,6,4,5,15,4,65,8,48,95,95,45,15,55,4,10,4100,1000,100]
+// var  a = ["Nitin","Sumit","Amit","Ankit","Ankita","Mohit"]
+
+console.log(a)
+
+a.sort((x,y)=>x-y)
+console.log(a)
