@@ -252,3 +252,16 @@ function sum(prev,current){
 console.log(a.reduce(sum))
 
 console.log(a.reduce((prev,current)=>prev+current))
+
+
+//! includes() -> return true if array contains an item else return false
+console.log(a.includes(50))
+console.log(a.includes(500))
+
+//! indexOf() -> return lowest index of item from array and return -1 if item not found in Array
+console.log(a.indexOf(50))
+console.log(a.indexOf(500))
+
+//! lastIndexOf() -> return highest index of item from array and return -1 if item not found in Array
+console.log(a.lastIndexOf(50))
+console.log(a.lastIndexOf(500))
