@@ -282,3 +282,29 @@ console.log(a)
 
 a.sort((x,y)=>x-y)
 console.log(a)
+
+
+//!Array Destructuring
+var emp = [1001,"Nitin Chauhan","Trainer",135000,"Faridabad","Haryana"]
+// console.log(
+//   `
+//     Employee Id     : ${emp[0]}
+//     Name            : ${emp[1]}
+//     Designation     : ${emp[2]}
+//     Salary          : ${emp[3]}
+//     City            : ${emp[4]}
+//     State           : ${emp[5]}
+//   `
+// )
+
+var [id,name,dsg,salary,city,state] = emp
+console.log(
+    `
+      Employee Id     : ${id}
+      Name            : ${name}
+      Designation     : ${dsg}
+      Salary          : ${salary}
+      City            : ${city}
+      State           : ${state}
+    `
+  )
