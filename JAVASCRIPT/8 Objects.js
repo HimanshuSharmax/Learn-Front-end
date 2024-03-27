@@ -52,3 +52,9 @@ for(let key in emp){
 emp.email = "vishankchauhan@gmail.com"
 emp['phone'] = "9873848046"
 console.log(emp)
+
+
+//! deleting object item
+delete emp.id
+delete emp['name']
+console.log(emp)
