@@ -58,3 +58,26 @@ console.log(emp)
 delete emp.id
 delete emp['name']
 console.log(emp)
+
+
+//! Nesting of Objects
+var emp = {
+     id:1001,
+     name:"Nitin Chauhan",
+     dsg:"Trainer",
+     salary:135000,
+     subject:["Mern Stack","Mean Stack","Python Full Stack","Php Full Stack"],
+     address:{
+         house:"82k",
+         street:"5A",
+         nearby:"Temple",
+         pin:121002,
+         city:"Faridabad",
+         state:"Haryana"
+     }
+ }
+ console.log(emp)
+ console.log(emp.subject)
+ console.log(emp.subject[2])
+ console.log(emp.address)
+ console.log(emp.address.city)
