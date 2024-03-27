@@ -308,3 +308,26 @@ console.log(
       State           : ${state}
     `
   )
+
+
+//! remove duplicate
+
+  var a = [10,20,30,10,20,30,10,20,30,20,30,40,50,60,70,80,90,10,10,10,100,20,30,20,30,50,60,70,80,90,10,40,40,50,60,60,60,60,60,80]
+  // makeing second array ->
+  // var b = []
+  // for(let item of a){
+  //   if(!(b.includes(item)))
+  //   b.push(item)
+  // }
+  // console.log(b)
+  
+  
+  for(let i = 0;i<a.length-1;i++){
+    for(let j=i+1;j<a.length;j++){
+      if(a[i]==a[j]){
+        a.splice(j,1)
+        j--
+      } 
+    }
+  }
+  console.log(a)
