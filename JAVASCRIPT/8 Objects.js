@@ -35,3 +35,20 @@ emp[`salary`] = 135000
 emp.city = "Noida"
 emp.state = "UP"
 console.log(emp)
+
+//! Accessing Object Values with help of keys
+console.log(emp.id)
+console.log(emp['name'])
+console.log(emp["dsg"])
+console.log(emp[`salary`])
+
+
+//! Accessing Object values through Loop
+for(let key in emp){
+    console.log(`${key} = ${emp[key]}`)
+}
+
+//! adding an item to existing object
+emp.email = "vishankchauhan@gmail.com"
+emp['phone'] = "9873848046"
+console.log(emp)
