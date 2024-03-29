@@ -155,3 +155,24 @@ var emp = {
 }
 emp.calculate()
 emp.display()
+
+// using fat arrow function
+var emp = {
+    id: 1001,
+    name: "Deepak Singh",
+    dsg: "Trainer",
+    setSalary: (num) => {
+        emp.salary = num
+    },
+    display: () => {
+        console.log(`
+            Employee Id :   ${emp.id}
+            Name        :   ${emp.name}
+            Designation :   ${emp.dsg}
+            Salary      :   ${emp.salary}
+        `)
+    }
+}
+emp.setSalary(98500)
+emp.display()
+
