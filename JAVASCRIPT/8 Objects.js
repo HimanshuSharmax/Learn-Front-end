@@ -106,3 +106,52 @@ var obj = {
 }
 obj.show()
 obj.display()
+
+// Fat Arrow functions in object
+var obj = {
+    show: () => console.log("In show() of Object"),
+    display: () => {
+        console.log("In display() of Object")
+    }
+}
+obj.show()
+obj.display()
+
+
+// Usecase of function in obj
+var emp = {
+    id: 1001,
+    name: "Nitin Chauhan",
+    dsg: "Trainer",
+    basic: 98500,
+    calculate() {
+        this.ta = this.basic * 5 / 100
+        this.da = this.basic * 10 / 100
+        this.hra = this.basic * 12 / 100
+        this.ma = this.basic * 15 / 100
+        this.gross = this.basic + this.ta + this.da + this.hra + this.ma
+        if (this.gross < 60000)
+            this.itax = 0
+        else
+            this.itax = this.gross * 12 / 100
+
+        this.net = this.gross-this.itax
+    },
+    display(){
+        console.log(`
+            Employee Id         :   ${this.id}
+            Name                :   ${this.name}
+            Designation         :   ${this.dsg}
+            Basic Salary        :   ${this.basic}
+            Ta                  :   ${this.ta}
+            Da                  :   ${this.da}
+            Hra                 :   ${this.hra}
+            Ma                  :   ${this.ma}
+            Gross Salary        :   ${this.gross}
+            Income Tax          :   ${this.itax}
+            Net Salary          :   ${this.net}
+        `)        
+    }
+}
+emp.calculate()
+emp.display()
