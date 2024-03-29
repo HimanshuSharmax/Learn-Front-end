@@ -81,3 +81,28 @@ var emp = {
  console.log(emp.subject[2])
  console.log(emp.address)
  console.log(emp.address.city)
+
+//! function in Objects
+//Regular/Normal functions in object
+var obj = {
+    show(){
+        console.log("In show() of Object")
+    },
+    display(){
+        console.log("In display() of Object")
+    }
+}
+obj.show()
+obj.display()
+
+//Anonymous functions in object
+var obj = {
+    show:function(){
+        console.log("In show() of Object")
+    },
+    display:function(){
+        console.log("In display() of Object")
+    }
+}
+obj.show()
+obj.display()
