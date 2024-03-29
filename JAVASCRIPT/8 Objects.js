@@ -176,3 +176,26 @@ var emp = {
 emp.setSalary(98500)
 emp.display()
 
+//Note : if we use fat arrow function, then this keyword represent globalthis so instead of this use object name in fat arrow function, and in case of regular function we can use this
+
+
+ //! getter and setter
+ var emp = {
+    id:1001,
+    name:"Deepak Singh",
+    dsg:"Trainer",
+    set setSalary(num){                 // Setter
+        this.salary = num
+    },
+    get display(){                      // getter
+        console.log(`
+            Employee Id :   ${this.id}
+            Name        :   ${this.name}
+            Designation :   ${this.dsg}
+            Salary      :   ${this.salary}
+        `)
+    }
+}
+emp.setSalary  =98500
+emp.display
+ 
