@@ -217,3 +217,16 @@ console.log(`
     City        :   ${city}
     State       :   ${state}
 `)
+
+
+//! object constructor / object prototype 
+ // making class before 2015 ecma (using this)
+ 
+ var Employee = function (id, name, dsg, salary, city, state) {
+    this.id = id
+    this.name = name
+    this.dsg = dsg
+    this.salary = salary
+    this.city = city
+    this.state = state
+}
