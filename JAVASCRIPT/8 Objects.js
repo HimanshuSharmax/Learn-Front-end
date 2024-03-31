@@ -230,3 +230,12 @@ console.log(`
     this.city = city
     this.state = state
 }
+
+
+var emp1 = new Employee(1001,"Nitin Chauhan","Trainer",163500,"Noida","UP")
+var emp2 = new Employee(1002,"Deepak Singh Gusain","Trainer",263500,"Ghaziabad","UP")
+var emp3 = new Employee(1003,"Mamta Jain","Trainer",363500,"South Delhi","Delhi")
+
+console.log(emp1)
+console.log(emp2)
+console.log(emp3)
