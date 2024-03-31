@@ -199,3 +199,21 @@ emp.display()
 emp.setSalary  =98500
 emp.display
  
+//! object destructuring
+ var emp = {
+    id:1001,
+    name:"Nitin Chauhan",
+    dsg:"Trainer",
+    salary:135000,
+    city:"Noida",
+    state:"UP"
+}
+var {name,id,state,city,dsg,salary} = emp   // destructure
+console.log(`
+    Id          :   ${id}
+    Name        :   ${name}
+    Designation :   ${dsg}
+    Salary      :   ${salary}
+    City        :   ${city}
+    State       :   ${state}
+`)
