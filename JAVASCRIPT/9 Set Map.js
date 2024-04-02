@@ -38,3 +38,14 @@ console.log(b.size)
 //! has() ->return true if item exist in set else return false
 console.log(b.has(50))
 console.log(b.has(500))
+
+
+/*
+    values:     return an iterator containing all items of set
+    keys:       return an iterator containing all items of set
+    entries:    return an iterator in pair if value,value 
+                containing all items of set
+ */
+console.log(b.values())
+console.log(b.keys())
+console.log(b.entries())
