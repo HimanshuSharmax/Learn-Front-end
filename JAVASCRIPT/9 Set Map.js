@@ -14,3 +14,16 @@ var c = Array.from(b)
 console.log(a)
 console.log(b)
 console.log(c)
+
+//! add() -> used to add an item in set,do nothing if item already exist
+b.add(100)
+console.log(b)
+b.add(110)
+console.log(b)
+
+//! delete() used to delete any particular item from Set
+//do nothing if delete is empty
+b.delete()
+console.log(b)
+b.delete(50)
+console.log(b)
