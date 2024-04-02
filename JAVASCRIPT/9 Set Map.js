@@ -27,3 +27,14 @@ b.delete()
 console.log(b)
 b.delete(50)
 console.log(b)
+
+//! clear()   //remove all items from set
+b.clear()
+console.log(b)
+
+//! size: return size of set
+console.log(b.size)
+
+//! has() ->return true if item exist in set else return false
+console.log(b.has(50))
+console.log(b.has(500))
