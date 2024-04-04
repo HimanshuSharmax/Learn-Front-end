@@ -107,3 +107,11 @@ console.log(emp.get("Nitin"))
 console.log(emp.keys())
 console.log(emp.values())
 console.log(emp.entries())
+
+// usecase -> check value how many type has
+var a = ["Car","Car","Bike","Jeep","Car","Car","Car","Bike","Jeep","Bike"]
+var result = new Map()
+for(let item of a){
+    result.set(item, result.has(item) ? result.get(item)+1 : 1)
+}
+console.log(result)
