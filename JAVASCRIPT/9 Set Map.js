@@ -67,3 +67,15 @@ var emp = new Map([
     ["Madhur",535000],
 ])
 console.log(emp)
+
+
+//! set() -> of map insert an item in map and if key already exist then
+// set() -> update keys value
+emp.set("Nitin",150000)
+emp.set("Neeraj",150000)
+console.log(emp)
+
+
+//! delete() -> used to delete any particular key from Map do nothing in case of Empty
+emp.delete("Nitin")
+console.log(emp)
