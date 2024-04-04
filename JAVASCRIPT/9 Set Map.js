@@ -49,3 +49,21 @@ console.log(b.has(500))
 console.log(b.values())
 console.log(b.keys())
 console.log(b.entries())
+
+//! map: -> collection of item but in pair of key and value
+//      keys must be unique but values may be duplicate
+//  if we use duplicate key in a map then only last key will used
+
+
+//how to make a map
+var emp = new Map([
+    ["Nitin",135000],
+    ["Amit",455000],
+    ["Satyam",655000],
+    ["Deepak",125000],
+    ["Mamta",135000],
+    ["Vishal",235000],
+    ["Rahul",435000],
+    ["Madhur",535000],
+])
+console.log(emp)
