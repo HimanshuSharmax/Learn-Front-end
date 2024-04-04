@@ -97,3 +97,13 @@ console.log(emp.has("Nikita"))
 
 //! get() : return value of specific key
 console.log(emp.get("Nitin"))
+
+/*
+    values:     return an iterator containing all values of map
+    keys:       return an iterator containing all keys of map
+    entries:    return an iterator in pair of key,value 
+                containing all items of map
+ */
+console.log(emp.keys())
+console.log(emp.values())
+console.log(emp.entries())
