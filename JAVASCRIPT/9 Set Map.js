@@ -79,3 +79,12 @@ console.log(emp)
 //! delete() -> used to delete any particular key from Map do nothing in case of Empty
 emp.delete("Nitin")
 console.log(emp)
+
+
+//! clear()  ->  //used to delete all items from Map
+emp.clear()
+console.log(emp)
+
+
+//! size -> return number of items of Map
+console.log(emp.size)
