@@ -88,3 +88,12 @@ console.log(emp)
 
 //! size -> return number of items of Map
 console.log(emp.size)
+
+
+//! has() :-> return true is map has an item else return false
+console.log(emp.has("Nitin"))
+console.log(emp.has("Nikita"))
+
+
+//! get() : return value of specific key
+console.log(emp.get("Nitin"))
