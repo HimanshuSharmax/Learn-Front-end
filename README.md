@@ -6,6 +6,10 @@ Welcome to my MERN (MongoDB, Express.js, React.js, Node.js) Stack Repository! He
 I am passionate about honing my skills in web development, and the MERN stack provides a robust set of technologies for creating modern and scalable applications. This repository will track my learning path, code implementations, and project developments.
 
 ## Technologies Used
+- HTML: Markup for web pages.
+- CSS: Styling web content.
+- Javascript: Adding interactivity to websites.
+  
 - MongoDB: NoSQL database for storing data.
 - Express.js: Web application framework for Node.js.
 - React.js: JavaScript library for building user interfaces.
