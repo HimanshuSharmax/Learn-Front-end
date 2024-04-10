@@ -1,4 +1,4 @@
-# Web-Development-files :👋
+# Front-end files:👋
 
 Welcome to my Web-Development-files Repository! Here, I document my progress as I delve into the world of frontend web development using Html, Css, and JavaScript. This repository serves as a showcase of my skills and projects as I learn and build applications.
 
