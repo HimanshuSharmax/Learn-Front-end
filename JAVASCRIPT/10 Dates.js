@@ -24,3 +24,17 @@ console.log(d.toLocaleString())
 console.log(e.toLocaleString())
 console.log(f.toLocaleString())
 console.log(g.toLocaleString())
+
+
+//! 3rd Style : new Date(miliseconds)
+var a = new Date(987384804600000)
+console.log(a.toLocaleString())
+
+
+//! 4th Style : new Date(dateString)
+//datestring: MM/DD/YYYY
+
+var a = new Date("12/18/2024")
+var b = new Date("12/18/2024 15:30:30")
+console.log(a.toLocaleString())
+console.log(b.toLocaleString())
