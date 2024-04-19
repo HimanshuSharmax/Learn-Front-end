@@ -38,3 +38,18 @@ var a = new Date("12/18/2024")
 var b = new Date("12/18/2024 15:30:30")
 console.log(a.toLocaleString())
 console.log(b.toLocaleString())
+
+
+//to get date and time
+var a=new Date()
+console.log(a.getFullYear());
+console.log(a.getMonth());
+console.log(a.getDate());
+console.log(a.getHours());
+console.log(a.getMinutes());
+console.log(a.getSeconds());
+console.log(a.getMilliseconds());
+console.log(a.getUTCDate());
+console.log(a.getTime());//miliseconds since 1/1/1970
+console.log(a.getDay()); //week day
+console.log(Date.now());//miliseconds since 1/1/1970
