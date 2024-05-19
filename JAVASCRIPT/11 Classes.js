@@ -177,3 +177,49 @@ Constructor:
     -> we can't return any specific value from a constructor
  
  */
+
+class Test{
+    constructor(){
+        console.log("Constructing class Test")
+    }
+    show(){
+        console.log("In show() of Test Class")
+    }
+}
+var obj = new Test()
+obj.show()
+obj.show()
+obj.show()
+obj.show()
+
+
+
+class AreaCalculation{
+    constructor(first=null,second=null,third=null){
+        if(third){
+            this.l = first
+            this.b = second
+            this.h = third
+            this.area = 2*(this.l*this.b + this.b*this.h + this.h*this.l)
+        }
+        else if(second){
+            this.l = first
+            this.b = second
+            this.area = this.l*this.b
+        }
+        else if(first){
+            this.r = first
+            this.area = 3.14*this.r**2
+        }
+    }
+    display(){
+        console.log(`Area = ${this.area}`)
+    }
+}
+var circle = new AreaCalculation(10)
+var rectangle = new AreaCalculation(10,20)
+var cuboid = new AreaCalculation(10,20,30)
+
+circle.display()
+rectangle.display()
+cuboid.display()
