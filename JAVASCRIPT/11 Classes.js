@@ -291,3 +291,26 @@ var obj = new Child()
 obj.show1()
 obj.show2()
 obj.display()
+
+//accessing overridden method by (super) ->
+class Test{
+    show1(){
+        console.log("In show1() of Test Class")
+    }
+    display(){
+        console.log("In display() of Test Class")
+    }
+}
+class Child extends Test{
+    show2(){
+        console.log("In show2() of Child Class")
+    }
+    display(){
+        super.display()  //accessing overridden method
+        console.log("In display() of Child Class")
+    }
+}
+var obj = new Child()
+obj.show1()
+obj.show2()
+obj.display()
