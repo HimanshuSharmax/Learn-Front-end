@@ -223,3 +223,71 @@ var cuboid = new AreaCalculation(10,20,30)
 circle.display()
 rectangle.display()
 cuboid.display()
+
+
+class Add {
+    constructor(x=0, y=0) {
+        this.a = x
+        this.b = y
+        this.sum = this.a + this.b
+    }
+    display(){
+        console.log(`${this.a} + ${this.b} = ${this.sum}`)
+    }
+}
+var obj1 = new Add(10,20)
+var obj2 = new Add()
+
+obj1.display()
+obj2.display()
+
+
+/*
+ * Inheritance:
+ * oops approach provide a feature to reuse all members
+ * of any previous existing class in a new class
+ *
+ * eg. if a class named B inherit class A then class
+ * B can reuse all member of class A so class B
+ * is called child class,derived class or subclass
+ * and class A is called parent class,super class
+ * or base class
+ *
+ * types:
+ *  1. Single Inheritance
+ *  2. multilevel Inheritance
+ *  3. Hierarchical Inheritance
+ *
+ * syntax:
+ *  class Parent{
+ *  -----
+ *  -----
+ *  }
+ *  class Child extends Parent{
+ *      ----
+ *      ----
+ * }
+ * Note: a child can access only those member of class
+ * parent which child doesn't have
+ */
+
+class Test{
+    show1(){
+        console.log("In show1() of Test Class")
+    }
+    display(){           //overridden method
+        console.log("In display() of Test Class")
+    }
+}
+class Child extends Test{
+    show2(){
+        console.log("In show2() of Child Class")
+    }
+    display(){
+        console.log("In display() of Child Class")
+    }
+}
+var obj = new Child()
+obj.show1()
+obj.show2()
+obj.display()
