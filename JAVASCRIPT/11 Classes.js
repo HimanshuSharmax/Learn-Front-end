@@ -314,3 +314,85 @@ var obj = new Child()
 obj.show1()
 obj.show2()
 obj.display()
+
+
+class Test{
+    constructor(){
+        console.log("Constructing Test Class")
+    }
+    display(){
+        console.log("In display() of Test Class")
+    }
+}
+class Child extends Test{
+    show(){
+        console.log("In show() of Child Class")
+    }
+}
+var obj = new Child()
+obj.display()
+obj.show()
+
+
+
+// Override constructor -> use (super) in child
+class Test{
+    display(){
+        console.log("In display() of Test Class")
+    }
+}
+class Child extends Test{
+    constructor(){
+        super()
+        console.log("Constructing Child Class")
+    }
+    show(){
+        console.log("In show() of Child Class")
+    }
+}
+var obj = new Child()
+obj.display()
+obj.show()
+
+
+//! Single Inheritance: when a single child class inherit a
+class Parent{
+    constructor(a,b){
+        this.a = a
+        this.b = b
+    }
+}
+class Child extends Parent{
+    display(){
+        this.sum = this.a + this.b
+        console.log(`${this.a} + ${this.b} = ${this.sum}`)
+    }
+}
+var obj = new Child(10,20)
+obj.display()
+
+
+
+//! mulilevel Inheritance: when a child class inherit another child class
+class Parent{
+    constructor(){
+        this.a = [10,20,30,40,50,60,70,80,90,100]
+    }
+}
+class Child1 extends Parent{
+    display(){
+        console.log(this.a)
+    }
+}
+class Child2 extends Child1{
+    reverse(){
+        this.a.reverse()
+    }   
+}
+var obj = new Child2()
+console.log("Original Array Elements are")
+obj.display()
+
+obj.reverse()
+console.log("Reversed Array Elements are")
+obj.display()
