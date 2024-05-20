@@ -26,3 +26,29 @@ var a               //creation phase
 console.log(a)      //execution phase
 a = 10              //execution phase
 console.log(a)      //execution phase
+
+
+/*
+in ES6 i.e ECMASCRIPT 2015 hoisting is avoided by let or const
+     keyword by using the let or const keyword instead of var we can 
+     avoid hoisting
+*/
+
+// error used in let --
+console.log(a)  //execution phase
+let a = 10      //creation phase
+console.log(a)  //execution phase
+
+
+
+//! use strict mode
+"use strict"
+
+a = 10
+console.log(a)
+
+
+var a = 10
+console.log(a)
+delete a
+console.log(a)
