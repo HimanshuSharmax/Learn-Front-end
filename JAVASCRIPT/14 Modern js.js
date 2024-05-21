@@ -302,3 +302,20 @@ var p3 = new Promise((res, rej) => {
         rej("Promise3 is Rejected")
     }, 6000)
 })
+
+//! consuming code -->
+p1.then((data) => {
+    console.log(data)
+    p2.then((data) => {
+        console.log(data)
+        p3.then((data) => {
+            console.log(data)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }).catch((error) => {
+        console.log(error)
+    })
+}).catch((error) => {
+    console.log(error)
+})
