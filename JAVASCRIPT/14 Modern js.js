@@ -319,3 +319,17 @@ p1.then((data) => {
 }).catch((error) => {
     console.log(error)
 })
+
+
+//! async\await and exception handling
+
+async function getPromise() {
+    try {
+        console.log(await p1)
+        console.log(await p2)
+        console.log(await p3)
+    } catch (error) {
+        console.log(error)
+    }
+}
+getPromise()
