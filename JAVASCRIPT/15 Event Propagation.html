@@ -45,5 +45,30 @@
         }
     </style>
 </head>
+<body>
+    <div class="main">
+        <div class="child1">
+            <div class="child2">
+                <div class="child3">
+                    <div class="child4">
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var main = document.querySelector(".main")
+        var child1 = document.querySelector(".child1")
+        var child2 = document.querySelector(".child2")
+        var child3 = document.querySelector(".child3")
+        var child4 = document.querySelector(".child4")
 
+        main.addEventListener("click",()=>alert("main event is called"),true)
+        child1.addEventListener("click",()=>alert("child1 event is called"),true)
+        child2.addEventListener("click",()=>alert("child2 event is called"),true)
+        child3.addEventListener("click",()=>alert("child3 event is called"),true)
+        child4.addEventListener("click",()=>alert("child4 event is called"),true)
+    </script>
+</body>
+</html>
